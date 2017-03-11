@@ -1,0 +1,31 @@
+.temple_form_container {
+    width: 700px;
+    display: inline-block;
+    float: left;
+    }
+
+.temple_container_right {
+    border-top: 4px solid dodgerblue !important;
+    border: 1px solid gainsboro;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    display: inline-block;
+    box-shadow: 1px 1px 2px darkgray;
+    }
+
+.temple_container_right img {
+    width: 100%;
+    }
+
+.temple_username, .temple_description {
+    color: gray;
+    }
+
+.temple_username {
+    font-size: 20px;
+    }
+.temple_description {
+    font-size: 14px;
+    font-weight: normal;
+    }
