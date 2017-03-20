@@ -9,3 +9,9 @@ require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/enqueue.php'; // enqueue, register, and deregister styles and scripts
 require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/post-type/custom-post-type.php';
+
+
+require get_template_directory() . '/custompage/function-admin.php';
+
+// Custom Metabox
+require get_template_directory() . '/metabox/metabox.php';
