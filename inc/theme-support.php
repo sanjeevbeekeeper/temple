@@ -26,7 +26,7 @@
     // Post format
     function temple_posted_meta(){
         // posted on time difference
-        $posted_on = human_time_diff(get_the_time('U'), current_time('timestamp'));
+        $posted_on = human_time_diff( get_the_time('U'), current_time('timestamp') );
         // Category breakdown
         $categories = get_the_category();
         $separator = ', ';
@@ -34,9 +34,7 @@
 
         if(!empty($categories)):
             foreach($categories as $category):
-                $output .= '<a href="'. esc_url(get_the_category_link($category->term_id)) .'" alt="'. esc_attr('View all posts in %s', $category->name) .'">'
-                .esc_html($category->name).
-                '</a>';
+                $output = '<a href=" '. esc_url( get_the_category_link($category->term_id) ) .' " alt=" '. esc_attr('View all posts in %s', $category->name) .' "> '. esc_html($category->name) .' </a>';
             endforeach;
         endif;
 
